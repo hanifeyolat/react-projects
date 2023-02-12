@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Roboto:wght@500;900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
+}
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-container{
+  width: 100%;
+  height: 60px;
+  background-color: #032541 ;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.banner{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+
+}
+.d-flex{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.link{
+  color: #fff;
+}
+.main-container{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 30px;
+  margin: 25px auto;
+}
+.banner-area{
+  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/r2NcIZ1FPMlxCty3vRITVTgGNVS.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  height: 300px;
+  margin:  0 auto;
+  padding: 50px;
+  color: #fff
+}
+.search-input{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  color: #032541;
+}
+.add-btn{
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: turquoise;
+  color: #032541;
+  font-weight: 900;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.movie-list-area{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+.movie-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+.movie-card img{
+  width: 100%;
+}
+.no-img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgb(165, 209, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+.movie-card .movie-card-texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+.btn{
+  width: auto;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+.btn[disabled]{
+  text-decoration: line-through;
+  opacity: .4;
+  pointer-events: none;
+}
+.btn:hover{
+  opacity: 0.7;
+}
+.btn-green{
+  background-color: rgb(68, 200, 68);
+  color: #fff;
+}
+.btn-red{
+  background-color: rgb(218, 52, 52);
+  color: #fff;
+}
+.no-film{
+  opacity: .4;
+  color: #032541;
+  text-align: center;
+  display: flex;
+  align-self: center;
+}
+.watchlist-movie-card{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.watchlist-movie-card h4, 
+.watchlist-movie-card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.watchlist-movie-card button{
+  margin-top: 10px;
+}
+
+.imdb{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+}
+
+.imdb b{
+  margin-top:9px;
+}
+
+@media (max-width:1200px) {
+  .movie-list-area,.main-container{
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+}
+
+@media (max-width:950px) {
+  .movie-list-area,.main-container{
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+}
+
+@media (max-width:750px) {
+  .movie-list-area,.main-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  
+}
+@media (max-width:500px) {
+  .movie-list-area,.main-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  
+}
