@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-container{
+    display: flex !important;
+    justify-content: space-between !important;
+    list-style-type: none;
+    align-self: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.uygulama{
+    display: inline-block;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto;
+    background-color: cornflowerblue;
+
+    padding: 20px;
+}
+h1{
+    background-color: rgb(47, 113, 237);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+ul li{
+    background-color: azure;
+    color:  rgb(47, 113, 237) !important;
+    padding: 15px;
+    width: 40%;
+    text-decoration: none;
+
+}
+.book-item{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-self: center;
+    background-color:rgb(137, 176, 248) ;
+    padding: 30px;
+    margin-bottom: 20px;
+   
+}
+.book-item img{
+    width:150px;
+}
+.book-text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sepete-ekle{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cart-buttons{
+    display: flex;
+    gap: 5px
+}
+.cart-buttons button{
+    padding: 10px;
+    align-self: center;
+}
+.cart-container h1 {
+    margin: 25px 0;
+    background-color: transparent!important ;
+    color: black;
+    text-align: end;
+}
